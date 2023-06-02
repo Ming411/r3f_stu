@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import {Canvas} from '@react-three/fiber';
-import Cpn from './views/Base5';
+import Cpn from './views/Base9';
 
 export default function App() {
   const cameraSettings = {
