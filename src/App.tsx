@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import {Canvas} from '@react-three/fiber';
-import Cpn from './views/Base9';
+import Cpn from './views/Base17';
 
 export default function App() {
   const cameraSettings = {
@@ -22,11 +22,13 @@ export default function App() {
   return (
     <>
       <Canvas
+        flat // 相当于开启 色调映射  Tonemapping（亮的地方亮，暗的地方暗）
         shadows={true} // 开启阴影
         camera={cameraSettings}
+        // onPointerMissed={() => console.log('missed')}
         gl={{
-          antialias: true, // 抗锯齿开
-          toneMapping: THREE.ACESFilmicToneMapping // 色调映射
+          antialias: true // 抗锯齿开
+          // toneMapping: THREE.ACESFilmicToneMapping // 色调映射
         }}
         // onCreated={created}
       >
