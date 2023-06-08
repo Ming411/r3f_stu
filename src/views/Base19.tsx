@@ -124,7 +124,7 @@ export default function Experience() {
 
         <RigidBody
           ref={twister}
-          type="kinematicPosition" // 位置动力学,通过设置四元数可以控制物体的运动
+          type="kinematicPosition" // 运动学刚体,通过设置四元数可以控制物体的运动
           friction={0}
           rotation-y={Math.PI}
           position-y={-0.8}
